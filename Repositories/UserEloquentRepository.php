@@ -18,6 +18,7 @@ class UserEloquentRepository implements UserRepository {
             $userData['first_name'],
             $userData['last_name']
         );
+        $this->save($user);
         return $user;
     }
 
@@ -32,6 +33,12 @@ class UserEloquentRepository implements UserRepository {
     {
         $user = User::findOrFail($userId);
         $user->update($userData);
+        return $user;
+    }
+
+    public function save($user)
+    {
+        $user->save();
         return $user;
     }
 }

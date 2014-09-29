@@ -19,4 +19,6 @@ interface UserRepository {
      */
     public function updateUser($userId, $userData);
 
+    public function save($user);
+
 }
