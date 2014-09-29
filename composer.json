@@ -15,6 +15,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "raymondidema/commandee": "~4.0"
     }
 }
