@@ -14,7 +14,6 @@ class UserRegistered {
      */
     function __construct(User $user)
     {
-        var_dump('i was here');
         $this->user = $user;
     }
 
